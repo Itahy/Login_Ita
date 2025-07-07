@@ -110,7 +110,7 @@
                   </div>
                 </div>
                 <!-- Submit button -->
-                <a href="amotoTribu.html" class="btn btn-primary btn-block mb-4 w-100">Iniciar sesión</a>
+                <button id="loginButton" class="btn btn-primary btn-block mb-4 w-100">Iniciar sesión</button>
                 <!-- Register buttons -->
                 <div class="text-center">
                     <p>¿No tienes cuenta? 
@@ -202,5 +202,25 @@
       </div>
     </div>
   </section>
+
+<script>
+  document.getElementById("loginButton").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const email = document.getElementById("loginName").value.trim();
+    const password = document.getElementById("loginPassword").value.trim();
+
+    // Usuario de ejemplo
+    const demoEmail = "usuario@ejemplo.com";
+    const demoPassword = "123456";
+
+    if (email === demoEmail && password === demoPassword) {
+      window.location.href = "amotoTribu.html";
+    } else {
+      alert("Usuario o contraseña incorrectos.\n\nPrueba con:\nUsuario: usuario@ejemplo.com\nContraseña: 123456");
+    }
+  });
+</script>
+  
 </body>
 </html>
