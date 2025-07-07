@@ -1,0 +1,113 @@
+/* boostrap5.css */
+
+/* Navbar custom styles */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.navbar-brand img {
+    transition: transform 0.2s;
+}
+.navbar-brand img:hover {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+.navbar .btn-outline-success,
+.navbar .btn-outline-primary {
+    border-radius: 20px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar .btn-outline-success:hover,
+.navbar .btn-outline-primary:hover {
+    background: #222;
+    color: #fff;
+}
+
+.navbar .form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255,193,7,.25);
+}
+
+/* Profile modal card */
+#profileCardModal .card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+#profileCardModal .card-img-top {
+    object-fit: cover;
+    height: 180px;
+}
+#profileCardModal .card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+#profileCardModal .btn-primary {
+    border-radius: 20px;
+}
+
+/* Carousel custom styles */
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    border-radius: 12px;
+    padding: 1.2rem 2rem;
+    bottom: 2.5rem;
+}
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.carousel-caption p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Mission & Vision section */
+.h-100.d-flex.flex-column {
+    position: relative;
+    overflow: hidden;
+}
+.h-100.d-flex.flex-column h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.h-100.d-flex.flex-column p {
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+/* Objetivo section */
+.container .text-center {
+    background: linear-gradient(135deg, #f8f9fa 60%, #e9ecef 100%);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+.container .text-center h2 {
+    color: #212529;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.container .text-center p {
+    color: #343a40;
+    font-size: 1.1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+    .navbar .btn,
+    .navbar .form-control {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .carousel-caption {
+        padding: 0.7rem 1rem;
+        font-size: 0.95rem;
+    }
+    .h-100.d-flex.flex-column h3 {
+        font-size: 1.2rem;
+    }
+}

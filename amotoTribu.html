@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/boostrap5.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="amotoTribu.html">
+                <img src="logo.png" alt="Logo" width="80" height="64" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bcatalogoMoto.html">Catalogo de motos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda Scrambler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Personaliza tu Moto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ayuda</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Atención al cliente</a></li>
+                            <li><a class="dropdown-item" href="#">Acerca de</a></li>
+                            <li><a class="dropdown-item" href="">Cerra sesion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <a class="btn btn-outline-success me-2" href="cLogin.html" role="button">Login</a>
+            </div>
+
+            <!-- Botón para mostrar la tarjeta de perfil -->
+            <button class="btn p-0 border-0 bg-transparent ms-2 d-flex align-items-center" type="button" data-bs-toggle="modal" data-bs-target="#profileCardModal" style="box-shadow:none;">
+                <img src="perfil (1).png" alt="Perfil" width="32" height="32" class="rounded-circle">
+            </button>
+
+            <!-- Modal con la tarjeta de perfil -->
+            <div class="modal fade" id="profileCardModal" tabindex="-1" aria-labelledby="profileCardModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="card m-0" style="width:100%">
+                                <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">John Doe</h4>
+                                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                    <a href="#" class="btn btn-primary">See Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide mt-3" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="motos-scrambler.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h3>CONOCENOS</h3>
+                    <p>MOTOTRIBU SCRAMBLER</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="motos-scrambler1.jpg" alt="Chicago" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h3>CONOCENOS</h3>
+                    <p>¡RUGE LIBRE. VIVE SCRAMBLER!</p>
+                </div> 
+            </div>
+            <div class="carousel-item">
+                <img src="motos_scrambler2.jpg" alt="New York" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h3>CONOCENOS</h3>
+                    <p>CONTACTANOS</p>
+                </div>  
+            </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mb-4">MotoTribu Scrambler</h2>
+                <p>
+                    MotoTribu Scrambler nace de la pasión por las motocicletas que combinan libertad, diseño clásico y espíritu aventurero. Somos una plataforma digital enfocada exclusivamente en el mundo de las motos tipo scrambler, un estilo que representa rebeldía, personalización y conexión con la ruta.
+                </p>
+                <p>
+                    Nuestra empresa no solo busca ofrecer motos y productos de calidad, sino también construir una comunidad vibrante de riders, mecánicos, diseñadores y soñadores que comparten una misma filosofía: vivir la vida con intensidad, fuera del camino convencional.
+                </p>
+                <p>
+                    Desde motocicletas nuevas y personalizadas, hasta accesorios exclusivos, guías técnicas, blogs inspiradores y foros para compartir experiencias, MotoTribu Scrambler es más que una tienda o una página web: es un punto de encuentro donde comienza cada nueva aventura.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="col-md-6 p-0">
+                <div class="h-100 d-flex flex-column justify-content-center align-items-center text-white" style="background: url('img/mision.jpg') center center/cover no-repeat; min-height: 350px;">
+                    <h3 class="mb-3 bg-dark bg-opacity-75 px-3 py-2 rounded">Misión</h3>
+                    <p class="bg-dark bg-opacity-50 px-4 py-3 rounded">
+                        Ofrecer un espacio digital especializado para los amantes de las motocicletas tipo scrambler, donde puedan informarse, personalizar, comprar, compartir experiencias y conectar con una comunidad apasionada por la aventura, el diseño y la libertad sobre dos ruedas.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <div class="h-100 d-flex flex-column justify-content-center align-items-center text-white" style="background: url('img/vision.jpg') center center/cover no-repeat; min-height: 350px;">
+                    <h3 class="mb-3 bg-dark bg-opacity-75 px-3 py-2 rounded">Visión</h3>
+                    <p class="bg-dark bg-opacity-50 px-4 py-3 rounded">
+                        Ser el sitio web líder en el mundo hispano para la cultura scrambler, reconocido por su autenticidad, innovación, calidad de contenido, y por reunir a una tribu global de motociclistas que viven el estilo scrambler como un modo de vida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center py-5 px-4 rounded">
+                    <h2 class="mb-4">Objetivo</h2>
+                    <p>
+                        Diseñar e implementar una plataforma web integral dedicada a motocicletas scrambler que combine tienda en línea, comunidad biker, blog informativo y espacio de personalización, impulsando la cultura scrambler en el ámbito hispanoamericano.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

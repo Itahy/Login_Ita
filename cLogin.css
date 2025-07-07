@@ -1,0 +1,152 @@
+/* Botones principales (Sign in, Sign up) */
+.btn-primary, .btn-primary:focus, .btn-primary:active {
+    background: linear-gradient(90deg, #ff9800 0%, #ffb347 100%);
+    border: none;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: 0 4px 16px 0 rgba(255, 152, 0, 0.15);
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #ffb347 0%, #ff9800 100%);
+    color: #000000;
+}
+
+/* Botones sociales */
+.btn-link.btn-floating {
+    color: #413e3e;
+    background: #ff9800;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px 0 rgba(255, 152, 0, 0.15);
+    transition: background 0.2s, color 0.2s;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.btn-link.btn-floating:hover {
+    background: #ffb347;
+    color: #544e4e;
+}
+
+/* Estilo para mejorar visualización de texto y cambiar color a naranja */
+.col-md-9.col-lg-6.col-xl-5 h2,
+.col-md-9.col-lg-6.col-xl-5 p {
+    color: #ff9800;
+    text-shadow: 0 2px 8px rgba(255, 152, 0, 0.08);
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.col-md-9.col-lg-6.col-xl-5 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.col-md-9.col-lg-6.col-xl-5 p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+#imagen {
+    max-width: 500px;
+    width: 100%;
+    opacity: 0.85;
+    transition: opacity 0.3s, box-shadow 0.3s;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(255, 152, 0, 0.18), 0 1.5px 6px 0 rgba(0,0,0,0.10);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imagen:hover {
+    opacity: 1;
+    box-shadow: 0 12px 40px 0 rgba(255, 152, 0, 0.22), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+
+/* Fondo general con degradado */
+body, .vh-100 {
+    background: linear-gradient(120deg, #f5ca21 0%, #030303 100%);
+    min-height: 100vh;
+}
+
+/* Sombra y fondo para el contenedor de formularios */
+.col-md-8.col-lg-6.col-xl-4.offset-xl-1 {
+    background: #b19b59;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(255, 152, 0, 0.10), 0 1.5px 6px 0 rgba(0,0,0,0.05);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Nav pills personalizados */
+.nav-pills .nav-link {
+    color: #000000;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: linear-gradient(90deg, #ff9800 0%, #ffb347 100%);
+    color: #000000;
+    box-shadow: 0 2px 8px 0 rgba(255, 152, 0, 0.10);
+}
+
+/* Inputs personalizados */
+.form-control:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 0 0.2rem rgba(255,152,0,.15);
+}
+
+.form-label {
+    color: #412904;
+    font-weight: 500;
+}
+
+/* Links */
+a {
+    color: #ff0000;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #452b06;
+}
+
+/* Checkbox personalizado */
+.form-check-input:checked {
+    background-color: #ff9800;
+    border-color: #ff9800;
+}
+
+/* Responsive imagen */
+.img-fluid {
+    max-width: 350px;
+    box-shadow: 0 4px 24px 0 rgba(255, 152, 0, 0.10);
+}
+
+/* Ajuste para dispositivos pequeños */
+@media (max-width: 991.98px) {
+    .col-md-9.col-lg-6.col-xl-5 {
+        margin-bottom: 2rem;
+    }
+    .col-md-8.col-lg-6.col-xl-4.offset-xl-1 {
+        padding: 2rem 1rem;
+    }
+    .img-fluid {
+        max-width: 100%;
+    }
+}
+
+
