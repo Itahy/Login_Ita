@@ -45,6 +45,7 @@ Esta compuesto por html, css y javaScript para validación. de correos y campos 
 ![image](https://github.com/user-attachments/assets/777dbf27-1c92-4ef5-ae97-aeb4759e3a0a)
 ![image](https://github.com/user-attachments/assets/55bcd5f2-c12a-47d2-942a-c4e51764362f)
 ![image](https://github.com/user-attachments/assets/38b54a33-3223-4eea-93d0-2524ef6f39fd)
+![image](https://github.com/user-attachments/assets/bcf29f6e-248d-4719-9bd6-a794edc03c38)
 
 
 
