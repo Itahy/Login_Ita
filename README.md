@@ -41,6 +41,43 @@ COMO ESTA COMPUESTO:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Esta compuesto por html, css y javaScript para validación. de correos y campos vacios
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ejemplo de inicio de sesión:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <script>
+  document.getElementById("loginButton").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const email = document.getElementById("loginName").value.trim();
+    const password = document.getElementById("loginPassword").value.trim();
+
+    // Usuario de ejemplo
+    const demoEmail = "usuario@ejemplo.com";
+    const demoPassword = "123456";
+
+    if (email === demoEmail && password === demoPassword) {
+      window.location.href = "amotoTribu.html";
+    } else {
+      alert("Usuario o contraseña incorrectos.\n\nPrueba con:\nUsuario: usuario@ejemplo.com\nContraseña: 123456");
+    }
+  });
+</script>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEBES INGRESAR CON: 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  const demoEmail = "usuario@ejemplo.com";
+  const demoPassword = "123456";
+
+  ![image](https://github.com/user-attachments/assets/871517df-666c-4e95-adb8-f8fa72379ad7)
+
+  ![image](https://github.com/user-attachments/assets/ffc8338d-9326-48c6-aabd-efc28145fde0)
+
+  ![image](https://github.com/user-attachments/assets/6d76c947-20a8-4c46-a693-bbb7bd4df330)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![image](https://github.com/user-attachments/assets/777dbf27-1c92-4ef5-ae97-aeb4759e3a0a)
 ![image](https://github.com/user-attachments/assets/55bcd5f2-c12a-47d2-942a-c4e51764362f)
