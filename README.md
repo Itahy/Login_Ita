@@ -41,6 +41,122 @@ COMO ESTA COMPUESTO:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Esta compuesto por html, css y javaScript para validación. de correos y campos vacios
 
+## 🧾 **Documentación del Proyecto: Login - MotoTribu Scrambler**
+
+### 📁 **Estructura general del proyecto**
+
+```plaintext
+/ (carpeta raíz)
+├── index.html             ← Página de login (este archivo)
+├── amotoTribu.html        ← Página principal (a donde se redirige tras iniciar sesión)
+├── motos_scrambler2.jpg   ← Imagen mostrada en la portada del login
+├── cLogin.css             ← Estilos CSS personalizados
+```
+
+### 🧱 **1. Composición del HTML**
+
+#### 🧭 `<head>`
+
+Incluye:
+
+* **Bootstrap 5**: Para diseño responsivo y componentes preestilizados.
+* **Font Awesome**: Para íconos sociales (Facebook, Google, Twitter, GitHub).
+* **cLogin.css**: Estilos personalizados del login.
+* **Bootstrap JS**: Para manejar componentes interactivos como los modales o pestañas.
+
+#### 🖼️ `<body>`
+
+Contiene un `section` de altura completa (`vh-100`) con dos columnas principales:
+
+* **Columna Izquierda**: Mensaje de bienvenida e imagen ilustrativa.
+* **Columna Derecha**: Pestañas (`nav-pills`) con los formularios de:
+
+  * **Inicio de sesión**
+  * **Registro**
+
+### 🔐 **2. Módulo de Iniciar Sesión**
+
+Incluye:
+
+* Acceso rápido con redes sociales.
+* Campos de correo/usuario y contraseña.
+* Checkbox para recordar sesión.
+* Enlace para recuperar contraseña con **modal**.
+* Botón de inicio de sesión con validación.
+
+### 🆕 **3. Módulo de Registro**
+
+Incluye:
+
+* Campos de nombre, usuario, correo, contraseña y repetir contraseña.
+* Aceptación de términos y condiciones.
+* Botón para registrarse (no tiene funcionalidad aún).
+
+### 🎨 **4. Estilos CSS (cLogin.css)**
+
+Se espera que `cLogin.css` contenga personalizaciones visuales como:
+
+* Colores personalizados (botones, fondos, tipografía).
+* Alineación de texto y márgenes.
+* Adaptaciones responsivas específicas.
+
+> *Puedes agregar ahí sombras, bordes redondeados, efectos hover, etc.*
+
+### ⚙️ **5. JavaScript personalizado**
+
+Ubicado al final del `body`.
+
+#### ✅ Funcionalidad del botón **Iniciar sesión**:
+
+```js
+document.getElementById("loginButton").addEventListener("click", function (event) {
+  event.preventDefault();
+  ...
+});
+```
+
+Este bloque:
+
+* Obtiene el correo y contraseña ingresados.
+* Los compara con un usuario de ejemplo:
+
+  * `usuario@ejemplo.com`
+  * `123456`
+* Si coinciden, redirige a `amotoTribu.html`.
+* Si no, muestra un `alert()` con datos de prueba.
+
+#### 🔁 Funcionalidad para cambiar de pestaña a registro:
+
+```js
+document.getElementById('goToRegister').addEventListener('click', function() {
+  document.getElementById('pills-register-tab').click();
+});
+```
+
+Este script hace que al dar clic en **"¿No tienes cuenta?"**, se active la pestaña de registro automáticamente.
+
+
+### 📋 **6. Componentes Bootstrap Utilizados**
+
+* `nav-pills`: para cambiar entre Login / Registro.
+* `form-control`: para inputs estilizados.
+* `modal`: para recuperación de contraseña.
+* `btn`, `btn-primary`, `btn-link`: para botones con estilos predefinidos.
+* `row`, `col-md-*`: para diseño responsivo con grid.
+
+
+### 🌐 **7. Librerías Externas**
+
+* **Bootstrap CSS & JS** (v5.3.3): `cdn.jsdelivr.net`
+* **Font Awesome** (v6.4.2): `cdnjs.cloudflare.com`
+
+## ✅ Recomendaciones para producción
+
+* Enlazar los formularios a un backend real o autenticación con Firebase/Auth0.
+* Encriptar contraseñas.
+* Validación con mensajes visibles (no solo `alert()`).
+* Añadir lógica real de registro y almacenamiento de datos.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Ejemplo de inicio de sesión:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
