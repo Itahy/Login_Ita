@@ -43,7 +43,7 @@ Esta compuesto por html, css y javaScript para validación. de correos y campos 
 
 ## 🧾 **Documentación del Proyecto: Login - MotoTribu Scrambler**
 
-### 📁 **Estructura general del proyecto**
+### **Estructura general del proyecto**
 
 ```plaintext
 / (carpeta raíz)
@@ -53,9 +53,9 @@ Esta compuesto por html, css y javaScript para validación. de correos y campos 
 ├── cLogin.css             ← Estilos CSS personalizados
 ```
 
-### 🧱 **1. Composición del HTML**
+### **1. Composición del HTML**
 
-#### 🧭 `<head>`
+#### `<head>`
 
 Incluye:
 
@@ -64,7 +64,7 @@ Incluye:
 * **cLogin.css**: Estilos personalizados del login.
 * **Bootstrap JS**: Para manejar componentes interactivos como los modales o pestañas.
 
-#### 🖼️ `<body>`
+#### `<body>`
 
 Contiene un `section` de altura completa (`vh-100`) con dos columnas principales:
 
@@ -74,7 +74,7 @@ Contiene un `section` de altura completa (`vh-100`) con dos columnas principales
   * **Inicio de sesión**
   * **Registro**
 
-### 🔐 **2. Módulo de Iniciar Sesión**
+### **2. Módulo de Iniciar Sesión**
 
 Incluye:
 
@@ -84,7 +84,7 @@ Incluye:
 * Enlace para recuperar contraseña con **modal**.
 * Botón de inicio de sesión con validación.
 
-### 🆕 **3. Módulo de Registro**
+### **3. Módulo de Registro**
 
 Incluye:
 
@@ -92,7 +92,7 @@ Incluye:
 * Aceptación de términos y condiciones.
 * Botón para registrarse (no tiene funcionalidad aún).
 
-### 🎨 **4. Estilos CSS (cLogin.css)**
+### **4. Estilos CSS (cLogin.css)**
 
 Se espera que `cLogin.css` contenga personalizaciones visuales como:
 
@@ -102,11 +102,11 @@ Se espera que `cLogin.css` contenga personalizaciones visuales como:
 
 > *Puedes agregar ahí sombras, bordes redondeados, efectos hover, etc.*
 
-### ⚙️ **5. JavaScript personalizado**
+### **5. JavaScript personalizado**
 
 Ubicado al final del `body`.
 
-#### ✅ Funcionalidad del botón **Iniciar sesión**:
+#### Funcionalidad del botón **Iniciar sesión**:
 
 ```js
 document.getElementById("loginButton").addEventListener("click", function (event) {
@@ -125,7 +125,7 @@ Este bloque:
 * Si coinciden, redirige a `amotoTribu.html`.
 * Si no, muestra un `alert()` con datos de prueba.
 
-#### 🔁 Funcionalidad para cambiar de pestaña a registro:
+####  Funcionalidad para cambiar de pestaña a registro:
 
 ```js
 document.getElementById('goToRegister').addEventListener('click', function() {
@@ -135,8 +135,7 @@ document.getElementById('goToRegister').addEventListener('click', function() {
 
 Este script hace que al dar clic en **"¿No tienes cuenta?"**, se active la pestaña de registro automáticamente.
 
-
-### 📋 **6. Componentes Bootstrap Utilizados**
+### **6. Componentes Bootstrap Utilizados**
 
 * `nav-pills`: para cambiar entre Login / Registro.
 * `form-control`: para inputs estilizados.
@@ -144,18 +143,10 @@ Este script hace que al dar clic en **"¿No tienes cuenta?"**, se active la pest
 * `btn`, `btn-primary`, `btn-link`: para botones con estilos predefinidos.
 * `row`, `col-md-*`: para diseño responsivo con grid.
 
-
-### 🌐 **7. Librerías Externas**
+### **7. Librerías Externas**
 
 * **Bootstrap CSS & JS** (v5.3.3): `cdn.jsdelivr.net`
 * **Font Awesome** (v6.4.2): `cdnjs.cloudflare.com`
-
-## ✅ Recomendaciones para producción
-
-* Enlazar los formularios a un backend real o autenticación con Firebase/Auth0.
-* Encriptar contraseñas.
-* Validación con mensajes visibles (no solo `alert()`).
-* Añadir lógica real de registro y almacenamiento de datos.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Ejemplo de inicio de sesión:
@@ -184,8 +175,8 @@ Ejemplo de inicio de sesión:
 DEBES INGRESAR CON: 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    "usuario@ejemplo.com";
-    "123456";
+     * `usuario@ejemplo.com`
+     * `123456`
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ![image](https://github.com/user-attachments/assets/871517df-666c-4e95-adb8-f8fa72379ad7)
 
@@ -194,8 +185,9 @@ DEBES INGRESAR CON:
   ![image](https://github.com/user-attachments/assets/6d76c947-20a8-4c46-a693-bbb7bd4df330)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+![image](https://github.com/user-attachments/assets/f60b33e4-d296-4af4-aed9-e9f39e96d79e)
 ![image](https://github.com/user-attachments/assets/777dbf27-1c92-4ef5-ae97-aeb4759e3a0a)
+![image](https://github.com/user-attachments/assets/36aa0a69-71ef-4dd1-830b-cf97d57e6c4a)
 ![image](https://github.com/user-attachments/assets/55bcd5f2-c12a-47d2-942a-c4e51764362f)
 ![image](https://github.com/user-attachments/assets/38b54a33-3223-4eea-93d0-2524ef6f39fd)
 ![image](https://github.com/user-attachments/assets/bcf29f6e-248d-4719-9bd6-a794edc03c38)
